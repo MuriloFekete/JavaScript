@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+            var nome = prompt("What is your name?")
+            document.write(`Olá <strong>${nome}</strong>, Your name has ${nome.length} letters <br>`) 
+            document.write(`Your name in UpperCase is ${nome.toUpperCase()} <br>`)
+            document.write(`Your name in LowerCase is ${nome.toLowerCase()} <br>`)
+
+            var numero = Number(prompt("Write a Number"))
+            document.write(`O número digitado foi ${numero.toFixed(2).replace('.',',')}<br>`)
+
+            //numero2.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+           
+    </script>
+</body>
+</html>
