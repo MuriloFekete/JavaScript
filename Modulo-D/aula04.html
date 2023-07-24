@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Me informe o páis que você nasceu</h1>
+    País:<input type="text" name="txtpais" id="txtnacio">
+    <input type="button" value="Enviar" onclick="where()">
+    <div id="res"></div>
+    <script>
+        function where() {
+            var res = document.querySelector('div#res')
+            var naci = document.getElementById("txtnacio")
+            var nacionalidade = naci.value
+            alert(`Você nasceu em ${nacionalidade}`)
+            if (nacionalidade == "Brasil" || nacionalidade == "brasa" || nacionalidade == "brasil") {
+                res.innerHTML += `<p>Você é <sgrong>brazuca</strong></p`
+            } else {
+                res.innerHTML += `Você nasceu em ${nacionalidade} você é estrangeiro(a)`
+            }
+        }
+    </script>
+</body>
+</html>
